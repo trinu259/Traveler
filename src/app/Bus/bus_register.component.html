@@ -1,0 +1,48 @@
+<form novalidate #createbus="ngForm">
+    <div class="container register">
+        <div class="row">
+            <div class="col-md-9 register-right">
+                <div class="tab-content" id="myTabContent">
+                    <div class="row register-form">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="number" class="form-control" maxlength="4" required name="id" placeholder="Service Number*"
+                                    [(ngModel)]="bus.id" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" required name="depo" placeholder="Depo *"
+                                    [(ngModel)]="bus.depo" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" required name="to" placeholder="To *"
+                                    [(ngModel)]="bus.to" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" required name="from" placeholder="From *"
+                                    [(ngModel)]="bus.from" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="driver" placeholder="Driver Name *"
+                                    [(ngModel)]="bus.driver" />
+                            </div>
+                            <div class="form-group">
+                                <input type="number" min="30" max="60" class="form-control" placeholder="Total Seats *"
+                                    required name="totalseats" [(ngModel)]="bus.totalseats" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="avilableseats"
+                                    placeholder="Avilabel Seats *" required [(ngModel)]="bus.avilableseats" />
+                            </div>
+                            <button type="button" class="btn btn-primary" (click)="create();"
+                                [disabled]="createbus.invalid">Submit</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</form>

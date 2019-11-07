@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~ag-grid-community/dist/styles/ag-grid.css";
+@import "~ag-grid-community/dist/styles/ag-theme-balham.css";
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.rag-red {
+    color: darkred;
+}
+.rag-green {
+    color: green;
+}
+.rag-blue {
+   color:blue;
+}
+.rag-grey {
+    color: grey;
+}
+.rag-orange {
+    color: orange;
+}
+.rag-yellow {
+    color: yellow;
+}
+.ag-theme-balham .ag-header-row:first-child .ag-header-cell, .ag-theme-balham .ag-header-row:first-child .ag-header-group-cell {
+    border-top-width: 0;
+    text-shadow: 0 0 black;
+    font-weight: bold;
+  
+}
