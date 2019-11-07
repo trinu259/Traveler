@@ -62,11 +62,6 @@ export class BusGetComponent implements OnInit {
   }
   ngOnInit() { }
 
-  /**ngOnInit() {
-      this.http.get("http://localhost:3000/bus/getby/" + this.id).subscribe((response) => {
-        this.bus = <Bus[]>response;
-    })
-    }*/
 
 
 }

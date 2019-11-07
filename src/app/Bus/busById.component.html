@@ -32,5 +32,13 @@
             </tr>
         </tbody>
     </table>
-    <button type="button" class="btn btn-primary" (click)="update();">Edit</button> <button type="button" class="btn btn-primary">Cancel</button>
+    <div class="row">
+        <div class="col-sm-6 text-center">
+            <button class="btn btn-primary btn-md" (click)="update();">Update</button>
+        </div>
+        <div class="col-sm-6 ">
+            <button class="btn btn-danger btn-md" (click)="delete();">Delete</button>
+        </div>
+    </div>
+
 </div>

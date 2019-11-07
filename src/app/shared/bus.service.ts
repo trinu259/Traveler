@@ -20,5 +20,10 @@ export class BusService {
     createbus(data:Bus) {
         return this.http.post(this._baseUrl + "createtbus",data);
     }
-
+    deletebus(id: number){
+        return this.http.delete(this._baseUrl+"deletebus/"+id)
+    }
+    updatebus(id:number){
+        return this.http.put("http://localhost:3000/bus/updatebus/"+id);
+    }
 }

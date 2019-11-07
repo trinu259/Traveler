@@ -19,8 +19,10 @@ export class BusRegisterComponent implements OnInit {
     ngOnInit() { }
     create() {
         this.busservice.createbus(this.bus).subscribe((response) => {
-            this.toastr.success("New Bus Created");
-            this.route["/busget"];
+            document.write("created new bus");
+            this.toastr.success('New Record Added Succcessfully', 'Bus Register');
+            this.route.navigate(["/busget"]);
+            
         })
     }
 }
