@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { BusService } from '../shared/bus.service';
-import { Bus } from '../model/bus';
+import { BusService } from '../../shared/bus.service';
+import { Bus } from '../../model/bus';
 import { ToastrService } from 'ngx-toastr';
 import { HttpClient } from '@angular/common/http';
 
