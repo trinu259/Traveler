@@ -27,10 +27,17 @@ export class BusByIdComponent implements OnInit {
         })
     }
     delete() {
+        if (confirm('Are you sure to delete this record?')) {
         this.busService.deletebus(this.id).subscribe((response) => {
             this.toaster.success("Deleted successfully");
             this.nav.navigate(["/busget"]);
         })
+    }
+    }
+    update()
+    {
+     
+      this.nav.navigate(["/editbus"]);
     }
     
     
