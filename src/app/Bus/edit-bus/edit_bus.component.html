@@ -6,36 +6,32 @@
                     <div class="row register-form">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="number" class="form-control" maxlength="4" required name="id" value="0000" placeholder="Service Number*"
-                                     />
+                                <input type="number" class="form-control" maxlength="4" required name="id"
+                                    placeholder="Service Number*" />{{bus.id}}
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" required name="depo" placeholder="Depo *"
-                                    />
+                                <input type="text" class="form-control" required name="depo" placeholder="Depo *" />
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" required name="to" placeholder="To *"
-                                    />
+                                <input type="text" class="form-control" required name="to" placeholder="To *" />
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" required name="from" placeholder="From *"
-                                    />
+                                <input type="text" class="form-control" required name="from" placeholder="From *" />
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" name="driver" placeholder="Driver Name *"
-                                   />
+                                <input type="text" class="form-control" name="driver" placeholder="Driver Name *" />
                             </div>
                             <div class="form-group">
                                 <input type="number" min="30" max="60" class="form-control" placeholder="Total Seats *"
-                                    required name="totalseats" [(ngModel)]="bus.totalseats" />
+                                    required name="totalseats"  />
                             </div>
                             <div class="form-group">
                                 <input type="number" class="form-control" name="avilableseats"
-                                    placeholder="Avilabel Seats *" required  />
+                                    placeholder="Avilabel Seats *" required />
                             </div>
-                            <button type="button" class="btn btn-primary" (click)=" onSubmit();"
+                            <button type="button" class="btn btn-primary" (click)=" submit();"
                                 [disabled]="createbus.invalid">Submit</button>
                         </div>
                     </div>

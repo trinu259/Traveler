@@ -12,18 +12,18 @@ export class BusService {
 
     }
     getAllBus() {
-        return this.http.get(this._baseUrl + "getallbus");
+        return this.http.get("http://localhost:3000/bus/"+ "getallbus");
     }
     byid(id: number) {
-        return this.http.get(this._baseUrl + "getby/" + id);
+        return this.http.get("http://localhost:3000/bus/"+ "getby/" + id);
     }
     createbus(data:Bus) {
-        return this.http.post(this._baseUrl + "createtbus",data);
+        return this.http.post("http://localhost:3000/bus/"+ "createtbus",data);
     }
     deletebus(id: number){
-        return this.http.delete(this._baseUrl+"deletebus/"+id)
+        return this.http.delete("http://localhost:3000/bus/"+"deletebus/"+id)
     }
      updatebus(bus:Bus){
-         return this.http.put("http://localhost:3000/bus/updatebus/"+bus.id,bus);
+         return this.http.put("http://localhost:3000/bus/"+"updatebus/"+bus.id,bus);
     }
 }
